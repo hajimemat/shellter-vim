@@ -1,0 +1,140 @@
+# 
+# FZF
+# ----------------------------------------------
+# {{{
+# - https://qiita.com/Sa2Knight/items/6635af9fc648a5431685
+# - https://meteora.work/vim-dein-fzf
+[[plugins]]
+repo = "junegunn/fzf.vim"
+hook_add = '''
+   call LoadSource('default/fzf.vim')
+'''
+# }}}
+# 
+# 整形
+# ----------------------------------------------
+# {{{
+[[plugins]]
+repo = 'h1mesuke/vim-alignta.git'
+on_cmd = ['Align', 'Alignta']
+# }}}
+# コメントトグル
+# ----------------------------------------------
+# {{{
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+# }}}
+#
+# 囲む
+# ----------------------------------------------
+# {{{
+[[plugins]]
+repo = 'tpope/vim-surround'
+# }}}
+#
+# 選択範囲
+# ----------------------------------------------
+# {{{
+[[plugins]]
+repo = 'terryma/vim-expand-region'
+hook_add = '''
+    call LoadSource('default/vim-expand-region.vim')
+'''
+# }}}
+#
+# 移動
+# ----------------------------------------------
+# {{{
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+hook_add = '''
+    call LoadSource('default/vim-easymotion.vim')
+'''
+[[plugins]]
+repo = 'yuttie/comfortable-motion.vim'
+hook_add = '''
+let g:comfortable_motion_interval = 2400.0 / 60
+let g:comfortable_motion_friction = 100.0
+let g:comfortable_motion_air_drag = 3.0
+'''
+# }}}
+#
+# 自動でペアを入力する
+#[[plugins]]
+#repo = 'jiangmiao/auto-pairs'
+#hook_add = '''
+#au FileType php let b:AutoPairs = AutoPairsDefine({}, ['<?php', '<?'])
+#'''
+#
+# シンタックス
+# ----------------------------------------------
+# {{{
+# シンタックス詰め合わせ
+[[plugins]]
+repo = 'sheerun/vim-polyglot'
+# }}}
+#
+# GIT
+# --------------------------
+# {{{
+#
+# 参考
+# - http://wakame.hatenablog.jp/entry/2017/05/03/222511
+#
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+# [[plugins]]
+# repo = 'vim-scripts/gitvimrc.vim'
+# }}}
+#
+# reStructuredText
+# --------------------------
+# {{{
+# 参考
+# - https://qh73xebitbucketorg.readthedocs.io/ja/latest/2.Tools/vim/plugin/riv/
+#[[plugins]]
+#repo = 'Rykka/clickable.vim'
+#on_ft= 'rst'
+#[[plugins]]
+#repo = 'Rykka/riv.vim'
+#on_ft= 'rst'
+#depends = ['Rykka/clickable.vim']
+# }}}
+#
+# NERDTree
+# --------------------------
+# {{{ 
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+on_cmd = ['NERDTree', 'NERDTreeToggle']
+hook_add = '''
+'''
+[[plugins]]
+repo = 'Xuyuanp/nerdtree-git-plugin'
+hook_add = '''
+'''
+# }}}
+#
+# Markdown
+# --------------------------
+# {{{
+[[plugins]]
+repo = 'iamcco/markdown-preview.nvim'
+on_ft = ['markdown', 'pandoc.markdown', 'rmd', 'md']
+build = 'sh -c "cd app & npm install"'
+hook_add = '''
+   call LoadSource('default/markdown-preview.vim')
+'''
+# }}}
+#
+# メモ
+# --------------------------
+# {{{
+[[plugins]]
+repo = 'glidenote/memolist.vim'
+hook_add = '''
+   call LoadSource('default/memolist.vim')
+'''
+# }}}
