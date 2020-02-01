@@ -9,23 +9,17 @@ Vimの設定ファイル郡
 - ag
 
 - php (phpactor)
-  - phive
   - phpcs
-  - phpcs
+  - phpmd
+  - phpcbf
 - nodejs
   - eslint
 - vint (VimScriptのALE)
--
-      \ 'php': ['php','phpcs','phpmd'],
-      \ 'javascript': ['eslint'],
-      \ 'vim': ['vint'],
-      \ }
-let g:ale_fixers = {
-      \ 'php': ['phpcbf'],
-      \ 'javascript': ['prettier-eslint'],
 
-## install phive
+## install phive and others
+
 ```sh
 wget -O ~/bin/phive "https://phar.io/releases/phive.phar"
+chmod 755 ~/bin/phive
+phive install -t ~/bin phpcs phpmd phpcbf
 ```
-
