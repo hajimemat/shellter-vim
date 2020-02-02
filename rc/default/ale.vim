@@ -22,9 +22,9 @@ let g:ale_fixers = {
       \ }
 " let g:ale_php_phpcbf_standard = 'psr2'
 " let g:ale_php_phpmd_ruleset = 'codesize,design,unusedcode,naming'
-let g:ale_completion_tsserver_autoimport=1
-let g:ale_completion_enabled = 1
-set omnifunc=ale#completion#OmniFunc
-call deoplete#custom#option('sources', {
-      \ '_': ['ale'],
-      \})
+" let g:ale_completion_tsserver_autoimport=1
+" let g:ale_completion_enabled = 1
+" set omnifunc=ale#completion#OmniFunc
+" call deoplete#custom#option('sources', {
+"       \ '_': ['ale'],
+"       \})

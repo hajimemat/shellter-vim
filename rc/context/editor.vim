@@ -46,3 +46,4 @@ au NoraAutoCmd FileType markdown
       \ set cole=0
 au NoraAutoCmd FileType markdown
       \ let g:indentLine_setConceal=0
+
