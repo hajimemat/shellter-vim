@@ -1,3 +1,4 @@
+.PHONY: ~/.config/nvim/init.vim ~/.vimrc ~/.vim/rc
 install:
 	make ~/.config/nvim/init.vim
 	make ~/.vimrc
