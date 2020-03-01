@@ -3,8 +3,9 @@ install:
 	make ~/.config/nvim/init.vim
 	make ~/.vimrc
 	make ~/.vim/rc
+	make initialize
 initialize:
-	nvim +UpdateRemotePlugins +quit
+	nvim --headless +UpdateRemotePlugins +quit
 
 ~/.config:
 	mkdir $@
