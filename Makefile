@@ -3,8 +3,12 @@ install:
 	make ~/.config/nvim/init.vim
 	make ~/.vimrc
 	make ~/.vim/rc
+initialize:
+	nvim +UpdateRemotePlugins +quit
 
-~/.config/nvim:
+~/.config:
+	mkdir $@
+~/.config/nvim: ~/.config
 	mkdir $@
 ~/.config/nvim/init.vim: ~/.config/nvim
 	ln -sfv $(realpath init.vim) $@
